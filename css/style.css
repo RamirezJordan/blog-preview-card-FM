@@ -1,0 +1,121 @@
+:root {
+    /* Primary Colors */
+    --Yellow: hsl(47, 88%, 63%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    /* Primary Font */
+    --Primary-font: "Figtree", sans-serif;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--Yellow);
+    font-family: var(--Primary-font);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+svg {
+    width: 100%;
+}
+
+picture {
+    width: 100%;
+}
+
+/* Container shadow */
+.shadow {
+    -webkit-box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+    border-radius: 2rem;
+}
+
+/* Center the content */
+.container {
+    max-width: 38rem;
+    width: 90%;
+    margin: 20rem auto;
+}
+
+.main-content {
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+/* Image */
+.image-container svg {
+    border-radius: 1.5rem;
+}
+
+/* Blog Information */
+.blog-information__tag {
+    background-color: var(--Yellow);
+    width: 10rem;
+    padding: .8rem;
+    text-align: center;
+    border-radius: .5rem;
+    font-weight: 700;
+}
+
+.blog-information__title:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.blog-information__info {
+    color: var(--Grey);
+}
+
+
+/* Avatar */
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar__image {
+    background-image: url(/assets/images/image-avatar.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4rem;
+    width: 4rem;
+    flex: 0 0 5rem;
+}
+
+.avatar__name {
+    flex: 1;
+}
+
+.avatar__name p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* Atribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
